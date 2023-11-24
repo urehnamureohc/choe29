@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FORDIKA</title>
+    <link rel="stylesheet" href="style2.css">
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var nomor = 0;
+
+            $("#btn2").click(function () {
+                var nama, kelas, alamat, bidang, kontakwa, alasan;
+                nama = $("#nama").val();
+                kelas = $("#kelas").val();
+                alamat = $("#alamat").val();
+                bidang = $("#bidang").val();
+                kontakwa = $("#kontakwa").val();
+                alasan = $("#alasan").val();
+                nomor++;
+                $("#listdata").append("<tr><td>" + nomor + "</td><td>" + nama + "</td><td>" + kelas + "</td> <td>" + alamat + "</td><td>" + bidang + "</td><td>" + kontakwa + "</td><td>" + alasan + "</td></tr>");
+                alert("Data berhasil disimpan");
+            });
+
+            $("#baru").click(function () {
+                nama = $("#nama").val("");
+                kelas = $("#kelas").val("");
+                alamat = $("#alamat").val("");
+                bidang = $("#bidang").val("");
+                kontakwa = $("#kontakwa").val("");
+                alasan = $("#alasan").val("");
+            });
+
+            $("#btnhilang").click(function () {
+                $("#formdata").toggle();
+            });
+
+            $("#btn5").click(function () {
+                $("#formdata").show();
+                $("#formkelamin").hide();
+            });
+            $("#btn6").click(function () {
+                $("#formdata").hide();
+                window.print();
+            });
+            $("#btn3").click(function () {
+                $("#formdata").clearQueue();
+                location.reload();
+            });
+
+        });
+    </script>
+
+</head>
+
+<body>
+    <!-- Note -->
+    <!-- <div style="background:yellow;padding:10px"> -->
+    </div>
+    <!-- Header -->
+    <div class="header">
+        <h1>FORUM DISKUSI DAN KOMUNIKASI</h1>
+        <p><b>FORDIKA</b></p>
+    </div>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a class="btn" href="index.html">Home</a>
+        <a class="btn" href="anggota.html">Anggota</a>
+        <a class="btn" href="bidang.html">Bidang</a>
+        <a class="btn" href="daftar.html">Pendaftaran</a>
+        <a class="btn" href="galeri.html">Galeri</a>
+        <a class="btn" href="tutorial.html">Tutorial</a>
+        <a class="btn" href="Sejarah.html">Sejarah</a>
+        <a class="btn" href="about.html">About</a>
+        <a class="btn" href="contact.html">Contact</a>
+        <a class="btn" href="bukutamu.html">Buku Tamu</a>
+    </div>
+
+    <hr>
+    <div class="container_daftar_heru">
+        <h2 align="center">FORMULIR PENDAFTARAN</h2>
+        <form action="#" id="formdata">
+
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" onkeypress="return cekHuruf(event)">
+
+            <label for="kelas">Kelas:</label>
+            <input type="text" id="kelas">
+
+
+            <label for="alamat">Alamat:</label>
+            <textarea id="alamat" rows="3"></textarea>
+
+            <label for="bidang">Bidang:</label>
+            <input type="text" id="bidang" onkeypress="return cekHuruf(event)">
+
+            <label for="kontakwa">No. WhatsApp:</label>
+            <input type="tel" id="kontakwa" onkeypress="return hanyaAngka(event)"
+                onkeypress="if(this.value.length===13) return false">
+
+            <label for="alasan">Alasan:</label>
+            <textarea id="alasan" rows="3" onkeypress="return cekHuruf(event)">
+            </textarea>
+
+            <button type="submit" id="baru">Baru</button>
+            <button type="submit" id="btn2">Simpan</button>
+            <button type="reset" id="btn3">Kosongkan Data</button>
+        </form>
+        <br><br><br>
+        </table>
+        <table id="listdata" align="center" width="100%" cellspacing="0px" cellpadding="0px" border="1px">
+            <tr>
+                <th>NO</th>
+                <th>Nama Lengkap</th>
+                <th>Kelas</th>
+                <th>Alamat</th>
+                <th>Bidang</th>
+                <th>Kontak Wa</th>
+                <th>Alasan</th>
+            </tr>
+        </table>
+    </div>
+    <hr>
+    <!-- Footer -->
+    <div class="footer">
+        <p>Copyright &copy; 2023 FORDIKA</p>
+        <h5>@heru_choeruman || Follow ig: <a href="https://www.instagram.com/hchoe29_/" target="_blank">@hchoe29_ </h5>
+    </div>
+
+    <script>
+        function cekHuruf(evt) {
+            var charcode = (evt.which) ? evt.which : event.keycode
+            if ((charcode < 65 || charcode > 90) && (charcode < 97 || charcode > 122) && charcode > 32)
+                return false;
+            return true;
+        }
+
+        function hanyaAngka(evt) {
+            var charCode = (evt.which) ? evt.which : event.keyCode
+            if (charCode > 31 && (charCode < 48 || charCode > 57))
+                return false;
+            return true;
+        }
+    </script>
+</body>
+
+</html>

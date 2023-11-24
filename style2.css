@@ -1,0 +1,258 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Style tag body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Header/logo Judul */
+.header {
+    padding: 60px;
+    text-align: center;
+    background: #5201af;
+    color: white;
+}
+
+/* Style box navigasi */
+.navbar {
+    overflow: hidden;
+    top: 0;
+    display: flex;
+    background-color: rgb(250, 0, 0);
+}
+
+.btn {
+    float: left;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Style navigasi link */
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* ubah warna link menu ketika disentuh */
+.navbar a:hover {
+    background-color: rgb(83, 172, 245);
+    color: black;
+}
+
+/* Kolom container */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/kiri kolom */
+.side {
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/* Add some padding inside the card container */
+.container {
+    padding: 2px 16px;
+}
+
+/* Kolom utama */
+.main {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+/* contoh gambar, untuk contoh saja */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+.map-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* css untuk halaman data anggota */
+/* Make table responsive */
+#mytable {
+    width: 100%;
+    border-collapse: collapse;
+    overflow-x: auto;
+}
+
+/* Style table header */
+#mytable th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+/* Style table cells */
+#mytable td, #mytable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+/* Add some spacing for better readability */
+#mytable tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Tampilan responsive - ketika lebar layar kurang dari700px ,maka akan 
+membuat dua kolom bertumpuk satu sama lain, bukan di samping satu sama lain 
+*/
+@media screen and (max-width: 700px) {
+    .row,
+    .navbar {
+        flex-direction: column;
+    }
+}
+/* akhir dari css data anggota */
+
+
+/* Form styles */
+#formdata {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#formdata td {
+    padding: 8px;
+}
+
+#formdata select,
+#formdata textarea {
+    width: 100%;
+}
+
+/* Buttons styles */
+#formdata button {
+    margin: 5px;
+}
+
+/* List data table styles */
+#listdata {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+#listdata th, #listdata td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+    #formdata {
+        max-width: 100%;
+    }
+
+    #listdata {
+        overflow-x: auto;
+    }
+}
+
+.container_daftar_heru {
+    justify-content: center;
+    background-color: #fff;
+    margin: auto;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100vh, 80%;
+    max-width: 3000px; /* Menetapkan lebar maksimum */
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+/* Responsif pada layar kecil (<= 600px) */
+@media screen and (max-width: 600px) {
+    .container {
+        width: 90%; /* Mengurangi lebar pada layar kecil */
+    }
+}
+
+#listdata {
+    width: 80%; /* Sesuaikan lebar tabel sesuai kebutuhan */
+    margin: auto;
+}
+
+#listdata th, #listdata td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+#listdata th {
+    background-color: #f2f2f2;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 600px) {
+    #listdata {
+        width: 100%; /* Mengisi lebar layar pada perangkat kecil */
+    }
+}

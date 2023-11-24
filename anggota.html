@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FORDIKA</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.12.1/datatables.min.css" />
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.12.1/datatables.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            $("#mytable").DataTable();
+
+        });
+    </script>
+    
+</head>
+
+<body>
+    <!-- Note -->
+    <!-- <div style="background:yellow;padding:10px"> -->
+    </div>
+    <!-- Header -->
+    <div class="header">
+        <h1>FORUM DISKUSI DAN KOMUNIKASI</h1>
+        <p><b>FORDIKA</b></p>
+    </div>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a class="btn" href="index.html">Home</a>
+        <a class="btn" href="anggota.html">Anggota</a>
+        <a class="btn" href="bidang.html">Bidang</a>
+        <a class="btn" href="daftar.html">Pendaftaran</a>
+        <a class="btn" href="galeri.html">Galeri</a>
+        <a class="btn" href="tutorial.html">Tutorial</a>
+        <a class="btn" href="Sejarah.html">Sejarah</a>
+        <a class="btn" href="about.html">About</a>
+        <a class="btn" href="contact.html">Contact</a>
+        <a class="btn" href="bukutamu.html">Buku Tamu</a>
+    </div>
+
+    <hr>
+    <div class="container_daftar_heru">
+        <h3 align="center">--- DATA ANGGOTA ---</h3>
+        <table id="mytable">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Nama Lengkap</th>
+                    <th>Kelas</th>
+                    <th>Asal Sekolah</th>
+                    <th>Alamat Lengkap</th>
+                    <th>Bidang</th>
+                    <th>Kontak Wa</th>
+                    <th>Alasan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Ahmad Sowabi Ihsan</td>
+                    <td>XI IPA 1</td>
+                    <td>Smp 1 Manonjaya</td>
+                    <td>Jl. Sukajadi Rt/Rw 001/012 Kel. Mekarjadi Kec. Ciamis Kab. Ciamis</td>
+                    <td>Multimedia</td>
+                    <td>089223765134</td>
+                    <td>Karena suka animasi</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Febrianti</td>
+                    <td>XI IPS 3</td>
+                    <td>Smp 1 Manonjaya</td>
+                    <td>Jl. Cikahuripan Rt/Rw 002/012 Kel. Citapen Kec. Bungursari Kota Tasikmalaya</td>
+                    <td>Operator</td>
+                    <td>082345277689</td>
+                    <td>Karena suka mengoperasikan di excel,power point</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Hilmi Alawi</td>
+                    <td>XI IPS 4</td>
+                    <td>Smp bahrul ulum</td>
+                    <td>Jl. Sakura Rt/Rw 003/012 Kel. Cicileuan Kec. Bunga Mekar Garut</td>
+                    <td>RPL</td>
+                    <td>082345277382</td>
+                    <td>ingin masuk aja</td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>Dilla Yuliana</td>
+                    <td>XI IPA 4</td>
+                    <td>Smp 7 Malang</td>
+                    <td>Jl. Mangin Rt/Rw 004/012 Kel. Dungarsi Kec. Cicaheum Malang</td>
+                    <td>Tkj</td>
+                    <td>082345277382</td>
+                    <td>ingin masuk aja</td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>Shinta Nazlah</td>
+                    <td>XI BAHASA</td>
+                    <td>Mts bahrul ulum</td>
+                    <td>Jl. Lengkong Rt/Rw 006/012 Kel. cilalas Kec. Bubuntu Kab. Tasikmlaya</td>
+                    <td>Multimedia</td>
+                    <td>082345277382</td>
+                    <td>ingin masuk aja</td>
+                </tr>
+
+                <tr>
+                    <td>6</td>
+                    <td>Heru Choeruman</td>
+                    <td>XI IPS 3</td>
+                    <td>Mts bahrul ulum</td>
+                    <td>Jl. BojongSari Rt/Rw 002/013 Kel. Maleber Kec. Ciamis Kab. Ciamis</td>
+                    <td>Multimedia</td>
+                    <td>082345277382</td>
+                    <td>ingin masuk aja</td>
+                </tr>
+
+                <tr>
+                    <td>7</td>
+                    <td>Syita Nurfadilah</td>
+                    <td>XI IPA 3</td>
+                    <td>Smp bahrul ulum</td>
+                    <td>Jl. Tarunggu Rt/Rw 004/013 Kel. Sindanggalih Kec. Parung Kab. Tasikmalaya</td>
+                    <td>Rpl</td>
+                    <td>082345277382</td>
+                    <td>ingin masuk aja</td>
+                </tr>
+
+                <tr>
+                    <td>8</td>
+                    <td>Azhar Saeri</td>
+                    <td>XI IPS 2</td>
+                    <td>Mts bahrul ulum</td>
+                    <td>Jl. Caruy Rt/Rw 007/014 Kel. Sentra Salak Kec. Margabakti Bandung</td>
+                    <td>Multimedia</td>
+                    <td>082345277382</td>
+                    <td>ingin masuk aja</td>
+                </tr>
+
+                <tr>
+                    <td>9</td>
+                    <td>Sani Nurmala</td>
+                    <td>XI IPS 5</td>
+                    <td>Mts cisalak</td>
+                    <td>Jl. Cisalak Rt/Rw 006/011 Kel. Cisangkir Kec. Cisangkir Kota Tasikmalaya</td>
+                    <td>Multimedia</td>
+                    <td>082345277382</td>
+                    <td>ingin masuk aja</td>
+                </tr>
+
+                <tr>
+                    <td>10</td>
+                    <td>Latip Supriatna</td>
+                    <td>XI IPS 3</td>
+                    <td>Smp 17 Purbaratu</td>
+                    <td>Jl. Golempang Rt/Rw 003/013 Kel. Cisarua Kec. Purbaratu Kota Tasikmalaya/td>
+                    <td>Multimedia</td>
+                    <td>082345277382</td>
+                    <td>ingin masuk aja</td>
+                </tr>
+
+                <tr>
+                    <td>11</td>
+                    <td>Ai Linda</td>
+                    <td>XI IPA 3</td>
+                    <td>Mts Cilendek</td>
+                    <td>Jl. Karang Rt/Rw 002/014 Kel. Cisangkir Kec. Kota Baru Kota Tasikmalaya</td>
+                    <td>Operator</td>
+                    <td>082345277382</td>
+                    <td>ingin masuk aja</td>
+                </tr>
+
+                <tr>
+                    <td>12</td>
+                    <td>M.Alfarisi</td>
+                    <td>XI IPS 3</td>
+                    <td>Smp bahrul ulum</td>
+                    <td>Jl. Bojonghuni Rt/Rw 001/013 Kel. Maleber Kec. Ciamis Kab. Ciamis </td>
+                    <td>Tkj</td>
+                    <td>082345277382</td>
+                    <td>ingin masuk aja</td>
+                </tr>
+
+                <tr>
+                    <td>13</td>
+                    <td>Asep Husni</td>
+                    <td>XI IPS 3</td>
+                    <td>Smp 11 Tasikmalaya</td>
+                    <td>Jl. Karang Rt/Rw 002/014 Kel. Cisangkir Kec. Kota Baru Kota Tasikmalaya</td>
+                    <td>RPL</td>
+                    <td>082345277382</td>
+                    <td>ingin masuk aja</td>
+                </tr>
+
+                <tr>
+                    <td>14</td>
+                    <td>Wiwit Sofiatul Wahyuni</td>
+                    <td>XI IPA 2</td>
+                    <td>Mts bahrul ulum</td>
+                    <td>Jl. Bojong Jengkol Rt/Rw 011/013 Kel. Manisan Kec. Paritan Banjar </td>
+                    <td>Multimedia</td>
+                    <td>082345277382</td>
+                    <td>ingin masuk aja</td>
+                </tr>
+
+                <tr>
+                    <td>15</td>
+                    <td>Syita Nurfadilla</td>
+                    <td>XI IPA 4</td>
+                    <td>Smp bahrul ulum</td>
+                    <td>Jl. Kotabaru Rt/Rw 001/016 Kel. Jatinangor Kec. Cisalak Kota Tasikmalaya </td>
+                    <td>Tkj</td>
+                    <td>082345277382</td>
+                    <td>ingin masuk aja</td>
+                </tr>
+
+
+            </tbody>
+        </table>
+    </div>
+    <hr>
+    <!-- Footer -->
+    <div class="footer">
+        <p>Copyright &copy; 2023 FORDIKA</p>
+        <h5>@heru_choeruman || Follow ig: <a href="https://www.instagram.com/hchoe29_/" target="_blank">@hchoe29_ </h5>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+.box-heru {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.box-heru img {
+    width: 40%;
+    border-radius: 30px;
+}
+
+.box-heru {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+ 
+.box-heru .galeri {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+.box-heru .galeri img {
+    width: 20%;
+    margin: 5px;
+    box-sizing: border-box;
+}
